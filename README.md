@@ -1,4 +1,4 @@
-# 💼 Sushil Sali - Developer Portfolio
+# 💼 Sushil Sali -  Portfolio
 
 Welcome to my personal portfolio website! This portfolio showcases my skills, projects, experience, and journey as a Backend Developer.
 
@@ -128,9 +128,6 @@ npm run deploy
 ## 📬 Contact
 
 - GitHub: https://github.com/Sushil-Sali
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
-- Email: YOUR_EMAIL@example.com
+- LinkedIn: https://www.linkedin.com/in/sushil-sali-23a939260/
+- Email: sushilsali65@gmail.com
 
----
-
-⭐ If you like this portfolio, don't forget to give this repository a star!
