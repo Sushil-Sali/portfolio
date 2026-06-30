@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { skillsData } from '../data/skills';
+import { motion } from "framer-motion";
+import { skillsData } from "../data/skills";
 
 const Skills = () => {
   const containerVariants = {
@@ -7,9 +7,9 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05
-      }
-    }
+        staggerChildren: 0.05,
+      },
+    },
   };
 
   const itemVariants = {
@@ -17,17 +17,16 @@ const Skills = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4 }
-    }
+      transition: { duration: 0.4 },
+    },
   };
 
   return (
-    <section 
-      id="skills" 
+    <section
+      id="skills"
       className="py-20 relative bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold font-display inline-block relative pb-2">
@@ -35,7 +34,9 @@ const Skills = () => {
             <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
           </h2>
           <p className="mt-4 text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-            A comprehensive list of programming languages, frontend tools, backend services, databases, authentication protocols, and AI assistants I use.
+            A comprehensive list of programming languages, frontend tools,
+            backend services, databases, authentication protocols, and AI
+            assistants I use.
           </p>
         </div>
 
@@ -57,7 +58,7 @@ const Skills = () => {
                 </span>
               </h3>
 
-              <motion.div 
+              <motion.div
                 className="grid grid-cols-2 gap-4"
                 variants={containerVariants}
                 initial="hidden"
@@ -73,7 +74,9 @@ const Skills = () => {
                       variants={itemVariants}
                       whileHover={{ scale: 1.05 }}
                     >
-                      <div className={`text-2xl ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
+                      <div
+                        className={`text-2xl ${skill.color} group-hover:scale-110 transition-transform duration-300`}
+                      >
                         <Icon />
                       </div>
                       <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 group-hover:text-primary dark:group-hover:text-primary transition-colors">
@@ -86,7 +89,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
